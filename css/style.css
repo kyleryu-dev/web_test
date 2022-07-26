@@ -1,5 +1,354 @@
 @charset "utf-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+main {
+  text-align: center;
+  background: #fff;
+}
 
 .section1 {
+  min-width: 20rem;
+  box-sizing: border-box;
+  position: relative;
+  color: white;
   background-color: #121212;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.article1 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main_logo {
+  display: inline-block;
+  margin: 107px auto 0;
+  width: 130px;
+  height: 46px;
+  -webkit-background-size: 130px 46px;
+  background-size: 130px 46px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  -webkit-animation: animation-plwpox 0.75s 0.25s ease both;
+  animation: animation-plwpox 0.75s 0.25s ease both;
+}
+
+.main_title {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 900;
+  font-size: 2.1rem;
+  line-height: 1.28;
+  letter-spacing: 0;
+  color: #ffffff;
+  -webkit-animation: animation-10no5g2 0.75s 0.5s ease-out both;
+  animation: animation-10no5g2 0.75s 0.5s ease-out both;
+}
+
+footer {
+  text-align: left;
+  background: rgb(250, 250, 250);
+}
+
+.cover {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 1.5rem;
+  max-width: 40rem;
+}
+
+.innerFooter {
+  display: grid;
+  gap: 1rem;
+  margin: 0px auto;
+  padding: 2rem 0px;
+  color: rgb(158, 158, 158);
+  max-width: 64rem;
+}
+
+.info {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.info_title {
+  display: block;
+  margin: 0px;
+  color: inherit;
+  font-family: "Spoqa Han Sans", SDGothicNeo1, sans-serif;
+  font-weight: bold;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+}
+
+.info_subTitle {
+  display: block;
+  margin: 0px;
+  color: inherit;
+  font-family: "Spoqa Han Sans", SDGothicNeo1, sans-serif;
+  font-weight: normal;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+}
+
+.copy {
+  display: block;
+  margin: 0px;
+  color: inherit;
+  font-family: "Spoqa Han Sans", SDGothicNeo1, sans-serif;
+  font-weight: normal;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+}
+/* // footer */
+
+
+.interval {
+  position: absolute;
+  width: 100%;
+}
+
+.innerInterval {
+  position: sticky;
+  width: 100%;
+  height: 1rem;
+  background: rgb(250, 250, 250);
+  top: 0px;
+}
+
+.dwl {
+  position: sticky;
+  bottom: 0;
+}
+
+.scroll_down {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  top: -7rem;
+  left: 50%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 8rem;
+  padding: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 80%);
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in-out 0s;
+  opacity: 1;
+}
+
+.scroll_down img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.dwl_1 {
+  box-sizing: border-box;
+  filter: drop-shadow(rgba(33, 33, 33, 0.04) 0px 0px 0.25rem) drop-shadow(rgba(33, 33, 33, 0.08) 0px 0.5rem 1rem);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.dwl_2 {
+  margin: 0px auto;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+}
+
+.dwl_logo {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 0.75rem;
+}
+
+.dwl_logo img {
+  width: auto;
+  height: 1.2rem;
+  color: #121212;
+}
+
+.dwl_btn {
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 0.75rem;
+  width: 20.375rem;
+  grid-auto-flow: column;
+}
+
+.btn {
+  position: relative;
+  width: 100%;
+}
+
+.innerBtn {
+  all: initial;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(rgba(33, 33, 33, 0.08) 0px 0.125rem 0.25rem);
+  font-family: "Spoqa Han Sans", SDGothicNeo1, sans-serif;
+  font-weight: bold;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease 0s;
+  overflow: hidden;
+  padding: 1rem 1.25rem;
+  background: rgb(33, 33, 33);
+}
+
+.innerBtn:hover {
+  opacity: 0.9;
+}
+
+.realBtn {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.realBtn img {
+  height: 1.5rem;
+}
+
+/* last */
+.full {
+  left: 0px;
+  right: 0px;
+  width: inherit;
+  margin: inherit;
+  max-width: inherit;
+}
+
+.center {
+  -webkit-box-align: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom {
+  bottom: env(safe-area-inset-bottom);
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+/* Media Query _ Mobile First */
+@media (min-width: 64rem) {
+
+  .section1 {
+    text-align: left;
+    position: relative;
+    color: white;
+    padding-top: 40px;
+    height: 700px;
+  }
+
+  .article1 {
+    width: 62.5rem;
+  }
+
+  .main_logo {
+    margin: 0 0 0 3.6rem;
+    width: 10.62rem;
+    height: 2.9rem;
+    -webkit-background-size: 102px 36px;
+    background-size: 102px 36px;
+    background-repeat: no-repeat;
+  }
+
+  .main_title {
+    margin-top: 6rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  footer {
+    padding: 0px 3.5rem;
+    max-width: 90rem;
+  }
+
+  .dwl_1 {
+    background: rgb(250, 250, 250);
+  }
+  
+  .cover {
+    padding: 0px 3.5rem;
+    max-width: 90rem;
+  }
+
+  .dwl_2 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 1.5rem 0px;
+    max-width: 64rem;
+  }
+
+}
+/* // Media Query */
+
+
+/* Animation */
+@keyframes animation-plwpox {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes animation-plwpox { /* Safari and Chrome */
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes animation-10no5g2 {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes animation-10no5g2 { /* Safari and Chrome */
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
