@@ -259,6 +259,7 @@ footer {
 }
 
 /* Media Query _ Mobile First */
+/* 여기서부터의 코드는 1024px부터(데스크탑) 적용되는 값이다. => 기본 코드가 for Mobile */
 @media (min-width: 64rem) {
 
   .section1 {
@@ -266,7 +267,7 @@ footer {
     position: relative;
     color: white;
     padding-top: 40px;
-    height: 700px;
+    height: 42rem;
   }
 
   .article1 {
