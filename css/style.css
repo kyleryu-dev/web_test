@@ -151,6 +151,7 @@ footer {
 
 .dwl_1 {
   box-sizing: border-box;
+  background: rgb(255, 255, 255);
   filter: drop-shadow(rgba(33, 33, 33, 0.04) 0px 0px 0.25rem) drop-shadow(rgba(33, 33, 33, 0.08) 0px 0.5rem 1rem);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -164,10 +165,41 @@ footer {
   padding-bottom: calc(1rem + env(safe-area-inset-bottom));
 }
 
+.mb_btn {
+  position: relative;
+  width: 100%;
+}
+
+.inner_mb_btn {
+  all: initial;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(rgba(33, 33, 33, 0.08) 0px 0.125rem 0.25rem);
+  font-family: "Spoqa Han Sans", SDGothicNeo1, sans-serif;
+  font-weight: bold;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease 0s;
+  overflow: hidden;
+  padding: 1rem 1.25rem;
+  background: rgb(33, 33, 33);
+}
+
 .dwl_logo {
   display: grid;
   grid-auto-flow: row;
   gap: 0.75rem;
+  visibility: hidden;
 }
 
 .dwl_logo img {
@@ -258,6 +290,7 @@ footer {
   z-index: 10;
 }
 
+
 /* Media Query _ Mobile First */
 /* 여기서부터의 코드는 1024px부터(데스크탑) 적용되는 값이다. => 기본 코드가 for Mobile */
 @media (min-width: 64rem) {
@@ -313,8 +346,17 @@ footer {
     max-width: 64rem;
   }
 
+  .mb_btn {
+    display: none;
+  }
+
+  .dwl_logo {
+    visibility: visible;
+  }
+
 }
 /* // Media Query */
+
 
 /* 4k Media Query */
 @media (min-width: 90rem) {
@@ -325,6 +367,7 @@ footer {
 
 }
 /* //4k Media Query */
+
 
 /* Animation */
 @keyframes animation-plwpox {
