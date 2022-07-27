@@ -32,21 +32,21 @@ main {
   background-size: 130px 46px;
   background-image: url(../img/logo.svg);
   background-repeat: no-repeat;
-  -webkit-animation: animation-plwpox 0.75s 0.25s ease both;
-  animation: animation-plwpox 0.75s 0.25s ease both;
+  -webkit-animation: animation-plwpox 1s 0.5s ease both;
+  animation: animation-plwpox 1s 0.5s ease both;
 }
 
 .main_title {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 900;
   font-size: 2.1rem;
   line-height: 1.28;
   letter-spacing: 0;
   color: #ffffff;
-  -webkit-animation: animation-10no5g2 0.75s 0.5s ease-out both;
-  animation: animation-10no5g2 0.75s 0.5s ease-out both;
+  -webkit-animation: animation-10no5g2 1s 1s ease-out both;
+  animation: animation-10no5g2 1s 1s ease-out both;
 }
 
 footer {
@@ -216,7 +216,7 @@ footer {
 }
 
 .innerBtn:hover {
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 .realBtn {
@@ -284,7 +284,7 @@ footer {
   }
 
   .main_title {
-    margin-top: 6rem;
+    margin-top: 3rem;
     font-size: 3.2rem;
     font-weight: 700;
   }
@@ -316,6 +316,15 @@ footer {
 }
 /* // Media Query */
 
+/* 4k Media Query */
+@media (min-width: 90rem) {
+
+  .main_title {
+    margin-top: 7rem;
+  }
+
+}
+/* //4k Media Query */
 
 /* Animation */
 @keyframes animation-plwpox {
