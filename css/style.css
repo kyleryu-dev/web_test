@@ -26,10 +26,11 @@ main {
 .main_logo {
   display: inline-block;
   margin: 107px auto 0;
-  width: 130px;
-  height: 46px;
-  -webkit-background-size: 130px 46px;
-  background-size: 130px 46px;
+  width: 110px;
+  height: 35px;
+  /* 130px 46px */
+  -webkit-background-size: contain;
+  background-size: contain;
   background-image: url(../img/logo.svg);
   background-repeat: no-repeat;
   -webkit-animation: animation-plwpox 1s 0.5s ease both;
@@ -38,15 +39,82 @@ main {
 
 .main_title {
   text-align: center;
-  margin-top: 1.5rem;
+  /* margin-top: 1rem; */
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 900;
-  font-size: 2.1rem;
+  font-size: 32px;
   line-height: 1.28;
   letter-spacing: 0;
   color: #ffffff;
   -webkit-animation: animation-10no5g2 1s 1s ease-out both;
   animation: animation-10no5g2 1s 1s ease-out both;
+}
+
+.open {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#count {
+  text-align: center;
+}
+/* //section1 */
+
+.section2 {
+  transition: all 0.8s ease-in-out 0s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.article2 {
+  background: rgb(250, 250, 250);
+}
+
+.inner_article2 {
+  display: grid;
+  gap: 1.5rem;
+  padding: 3.5rem 0px;
+  justify-items: center;
+}
+
+.article2_cover {
+  width: 100%;
+}
+
+.s2_title {
+  display: block;
+  margin: 0px;
+  color: rgb(158, 158, 158);
+  font-family: "Spoqa Han Sans", SDGothicNeo1, sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+}
+
+.s2_subTitle {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  margin: 0px;
+  color: rgb(33, 33, 33);
+  font-family: "Spoqa Han Sans", SDGothicNeo1, sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+}
+
+.s2_sub {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  margin: 0px;
+  color: inherit;
+  font-family: "Spoqa Han Sans", SDGothicNeo1, sans-serif;
+  font-weight: normal;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
 }
 
 footer {
@@ -195,6 +263,27 @@ footer {
   background: rgb(33, 33, 33);
 }
 
+.inner_mb_btn:hover {
+  opacity: 0.85;
+}
+
+.mb_real_btn {
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  grid-auto-flow: column;
+}
+
+.mb_real_btn img {
+  width: auto;
+  height: 0.75rem;
+}
+
+.mb_real_btn p {
+  font-weight: 900;
+}
+
 .dwl_logo {
   display: grid;
   grid-auto-flow: row;
@@ -320,6 +409,15 @@ footer {
     margin-top: 3rem;
     font-size: 3.2rem;
     font-weight: 700;
+  }
+  /* //section1 */
+
+  .inner_article2 {
+    padding: 5.5rem 0px;
+  }
+  
+  .article2_cover {
+    text-align: center;
   }
 
   footer {
