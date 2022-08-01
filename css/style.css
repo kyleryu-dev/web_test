@@ -13,7 +13,7 @@ main {
   position: relative;
   color: white;
   background-color: #121212;
-  height: 40rem;
+  height: 43.75rem;
   overflow: hidden;
 }
 
@@ -67,7 +67,8 @@ main {
 }
 
 .article2 {
-  background: rgb(250, 250, 250);
+  /* background: rgb(250, 250, 250); */
+  background-color: #fff;
 }
 
 .inner_article2 {
@@ -110,6 +111,14 @@ main {
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.section3 {
+  display: grid;
+}
+
+.article3 {
+  
 }
 
 footer {
@@ -384,7 +393,7 @@ footer {
     position: relative;
     color: white;
     padding-top: 40px;
-    height: 42rem;
+    height: 43.75rem;
   }
 
   .article1 {
